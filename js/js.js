@@ -93,19 +93,11 @@ document.addEventListener("mouseover",function(e)
     {
         e.target.parentElement.children[0].classList.remove('hide');
     }
-    if(e.target.classList.contains("sel"))
-    {
-        e.target.children[0].children[0].classList.add('lef');
-        setTimeout(function()
-        {
-            e.target.children[0].children[0].classList.remove('lef');
-        },500)
-    }
-    if(e.target.classList.contains('gaser'))
+   /* if(e.target.classList.contains('gaser'))
     {
         
         e.target.parentElement.classList.add('hide');
-    }
+    }*/
 });
 document.addEventListener("mouseout",function(e)
 {
@@ -113,15 +105,11 @@ document.addEventListener("mouseout",function(e)
     {
         e.target.parentElement.children[0].classList.add('hide');
     }
-   /* if(e.target.classList.contains("box"))
-    {
-        e.target.children[0].children[0].classList.remove('lef');
-    }*/
-    if(e.target.classList.contains('details'))
+    /*if(e.target.classList.contains('details'))
     {
         
         e.target.parentElement.children[0].classList.remove('hide');
-    }
+    }*/
 });
 
 // make active li
@@ -341,12 +329,12 @@ achivmentsLi.onclick=function()
 
 
 
-// fix bug in projects
+/*// fix bug in projects
 
 var menu=document.getElementById('menu');
 menu.onclick=function(){
     menu.parentElement.children[2].classList.toggle('hide');
-}
+}*/
 
 // btn more details
 var moreBtn=document.getElementById('more');
@@ -358,3 +346,6 @@ moreBtn.onclick=function()
         behavior:"smooth"
     });
 }
+
+
+

@@ -212,41 +212,12 @@ h3
         background-color: rgba(0, 0, 0, 0.562);
         height: 100%;
     }
-    #head header
+   
+    #head li a
     {
-        padding-top: 20px;
-        display: flex;
-    }
-
-    #head header div
-    {
-        font-size: 24px;
-        text-transform: uppercase;
-        font-weight: bold;
-        width: 30%;
-    }
-    #head header nav
-    {
-        width: 70%;
-        text-align: right;
-    }
-    #head header ul
-    {
-        font-size: 15px;
-    }
-    #head header ul i
-    {
-        margin-right: 5px;
-    }
-    #head header li
-    {
-        display:inline-block;
-        margin-right: 15px;
-        text-transform: capitalize;
-        transition: color .3s ease-in-out;
         cursor: pointer;
     }
-    #head header li:hover
+    #head li a:hover
     {
         color:var(--main-color);
     }
@@ -263,6 +234,21 @@ h3
     #head section p
     {
         font-size: 20px;
+    }
+    
+    #head .typed
+    {
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+        display: inline-block;
+        
+    }
+    #head .gss
+    {
+        font-size: 20px;
+        color: var(--main-color);
+        display: inline-block;
     }
     #head section button
     {
@@ -431,7 +417,7 @@ h3
         border-left: 20px solid white;
         border-bottom: 10px solid transparent;
         position: absolute;
-        left: 35.8vw;
+        left: 33.8vw;
         background-color: #ddd;
     }
     #education .box.one::before
@@ -442,7 +428,7 @@ h3
         position: absolute;
         border: 2px solid var(--main-color);
         border-radius: 50%;
-        left: 37.4vw;
+        left: 35.55vw;
         background-color: #ddd;
         z-index: 3;
         top:17px;
@@ -482,10 +468,12 @@ h3
     #services
     {
         min-height: 350px;
+        padding: 20px;
     }
     #services .boxs
     {
         
+        padding-top: 10px;
         overflow: hidden;
         height: 100%;
         display: flex;
@@ -519,6 +507,10 @@ h3
         color: var(--main-color);
         transition: transform .5s ease-in-out;
         
+    }
+    #services  .sel:hover .icon
+    {
+        transform: rotateY(180deg);
     }
     #services .box .icon
     {
@@ -569,6 +561,7 @@ h3
     #skills h3
     {
         font-size: 25px;
+        padding-top: 10px;
     }
 
     #skills i
@@ -610,15 +603,42 @@ h3
     /*************************start projects********************************/
     #projects
     {
+        padding-top: 15px;
         overflow: hidden;
         padding-bottom: 50px;
     }
+  /*  #projects li
+    {
+        float: left;
+        margin-right: 20px;
+        padding: 10px;
+        border: 2px solid var(--main-color);
+        border-radius: 10px;
+        cursor: pointer;
+        text-transform: capitalize;
+    }
+    #projects li.active
+    {
+        background: var(--main-color);
+        color: white;
+    }
+    #projects li:hover
+    {
+        background: var(--main-color);
+        color: white;
+
+    }
+    #projects ul
+    {
+        padding-bottom: 65px;
+    }*/
     #projects .boxs
     {
         display: flex;
         justify-content: space-between;
         overflow: hidden;
         flex-wrap: wrap;
+        padding-top: 5px;
     }
     #projects .boxs .box
     {
@@ -636,9 +656,14 @@ h3
     }
     #projects .boxs .box .image
     {
-    position: absolute;
-    z-index: 3;
-    transition: transform .3s ease-in-out;
+        position: absolute;
+        z-index: 3;
+        transition: transform .3s ease-in-out;
+    }
+    #projects .boxs .box:hover .image
+    {
+        z-index: 1;
+        transform: scale(1.1);
     }
     #projects .boxs .box .image.hide
     {
@@ -678,7 +703,8 @@ h3
         background-color: var(--main-color);
 
     }
-
+   
+    
     #projects .boxs .box img
     {
         width: 100%;
@@ -690,12 +716,12 @@ h3
         height: 400px;
         overflow: hidden;
         position: relative;
-        padding: 20px 0;
+        padding: 30px 0;
     }
     #achivments .ac
     {
         position: relative;
-    
+       
     }
     #achivments::before
     {
@@ -703,7 +729,7 @@ h3
         background-color:var(--main-color) ;
         position: absolute;
         width: 50%;
-        height: 100%;
+        height: 95%;
         top: 0;
     }
     #achivments::after
@@ -712,12 +738,13 @@ h3
         background-color:#444 ;
         position: absolute;
         width: 50%;
-        height: 100%;
+        height: 95%;
         left: 50%;
         top: 0;
     }
     #achivments .ac .boxs
     {
+        margin-top: 30px;
         overflow: hidden;
         height: 100%;
         display: flex;
@@ -873,8 +900,15 @@ h3
     {
         background-color: #444;
         color: white;
+        height: 40px;
         text-align: center;
         overflow: hidden;
+        
+        
+    }
+    footer p
+    {
+        line-height: 40px;
     }
     /*************************end footer********************************/
 }
@@ -1090,65 +1124,27 @@ and (max-width : 1099px)
         display: flex;
         z-index: 3;
     }
-
+    
     #head header div
     {
         font-size: 24px;
-        text-transform: uppercase;
         font-weight: bold;
         width: 100%;
     }
-    #head header .menu
+    #head .name
     {
-        float: right;
-        text-align: right;
-        font-size: 30px;
-        cursor: pointer;
-    }
-    #head header nav
-    {
-        width: 70%;
-        
-    }
-    #head header nav .nav
-    {
-        background: white;
-        text-align: left;
-        position: absolute;
-        width: 90%;
-        margin: 0 5%;
-        left: 0;
-        top:10vh;
-        padding: 20px;
-        font-size: 15px;
-        transition: transform .5s ease-in-out;
-        z-index: 2;
-        overflow: hidden;
-    }
-    
-    #head header .nav.hide
-    {
-       transform: translateY(-50vh);
-    }
-    #head header ul i
-    {
-        width: 30px;
-    }
-    
-    #head header li
-    {
-        display:block;
-        margin-bottom: 15px;
+        font-family: multi,sans-serif;
         text-transform: capitalize;
-        transition: color .3s ease-in-out;
-        cursor: pointer;
-        color:var(--main-color);
-        
     }
-    #head header li:hover
+    #head li a
+    {
+        cursor: pointer;
+    }
+    #head li a:hover
     {
         color:var(--main-color);
     }
+   
     #head section
     {
         margin-top: 50vw;
@@ -1175,6 +1171,28 @@ and (max-width : 1099px)
         outline:none;
         transition: all .5s ease-in-out ;
     }
+    #head .typed
+    {
+        font-size: 18px;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+        display: inline-block;
+    }
+    #head .gss
+    {
+        font-size: 20px;
+        color: var(--main-color);
+        display: inline-block;
+    }
+    #head nav .container
+    {
+        width: 100%;
+    }
+    #head nav
+    {
+        padding-left: 0;
+        padding-right: 0;
+    }
     #head section button:hover
     {
         background: rgba(221, 221, 221, 0);
@@ -1184,6 +1202,12 @@ and (max-width : 1099px)
     {
         margin-left: 20px;
     }
+    #gaserr
+    {
+        
+    
+        margin-top: 5px;
+    }
     /*************************end header********************************/
 
     /*************************start about********************************/
@@ -1192,6 +1216,7 @@ and (max-width : 1099px)
         margin-top: 5vw;
         padding-bottom: 50px;
         overflow: hidden;
+        padding: 20px 0;
     }
     #about .ab
     {
@@ -1201,6 +1226,10 @@ and (max-width : 1099px)
         opacity: 1;
         transition: opacity .5s ease-in-out,transform .5s ease-in-out;
     }
+    #about .ab h2
+    {
+        padding-bottom: 6px;
+    }
     #about .ab.hide
     {
         opacity: 0;
@@ -1209,6 +1238,7 @@ and (max-width : 1099px)
     #about .ab h3
     {
         font-size: 30px;
+        
     }
     #about .icons 
     {
@@ -1382,6 +1412,10 @@ and (max-width : 1099px)
     {
         min-height: 350px;
     }
+    #services h2
+    {
+        padding: 20px 0;
+    }
     #services .boxs
     {
         
@@ -1460,7 +1494,8 @@ and (max-width : 1099px)
     #skills  h2
     {
         font-size: 35px;
-
+            padding: 20px 0;
+        
     }
     #skills .icons
     {
@@ -1475,7 +1510,7 @@ and (max-width : 1099px)
     {
         
         font-size: 15vw;
-        margin: 0 5vw 5vw 0;
+        margin: 0 4vw 4vw 0;
         text-align:center;
         color:#868E95;
         
@@ -1514,6 +1549,10 @@ and (max-width : 1099px)
     {
         overflow: hidden;
         padding-bottom: 50px;
+    }
+    #projects h2
+    {
+        padding: 10px 0;
     }
     #projects .boxs
     {
@@ -1580,7 +1619,16 @@ and (max-width : 1099px)
         background-color: var(--main-color);
 
     }
-
+    #projects .boxs .box:hover .image
+    {
+        z-index: 1;
+        transform: scale(1.1);
+    }
+    #projects .boxs .box .image.hide
+    {
+        z-index: 1;
+        transform: scale(1.1);
+    }
     #projects .boxs .box img
     {
         width: 100%;
@@ -1593,6 +1641,10 @@ and (max-width : 1099px)
         padding-top: 80px;
         padding-bottom: 80px;
 
+    }
+    #achivments h2
+    {
+        padding-bottom: 10px;
     }
     #achivments .ac
     {
@@ -1787,6 +1839,11 @@ and (max-width : 1099px)
         color: white;
         text-align: center;
         overflow: hidden;
+        height: 11vw;
+    }
+    footer p
+    {
+        line-height: 11vw;
     }
     /*************************end footer********************************/
 }
