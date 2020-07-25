@@ -457,7 +457,7 @@ h3
         position: absolute;
         border: 2px solid var(--main-color);
         border-radius: 50%;
-        left: -3vw;
+        left: -2.75vw;
         background-color: #ddd;
         z-index: 3;
         top:17px;
@@ -1373,7 +1373,7 @@ and (max-width : 1099px)
         position: absolute;
         border: 2px solid var(--main-color);
         border-radius: 50%;
-        left: -10vw;
+        left: -9vw;
         background-color: #ddd;
         z-index: 3;
         top: 17px;
@@ -1400,7 +1400,7 @@ and (max-width : 1099px)
     position: absolute;
     border: 2px solid var(--main-color);
     border-radius: 50%;
-    left: -10vw;
+    left: -9vw;
     background-color: #ddd;
     z-index: 3;
     top: 17px;
