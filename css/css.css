@@ -28,7 +28,7 @@ h3
 {
     clear: both;
 }
-@media (min-width:1110px) 
+@media (min-width:992px) 
  {
     h2
     {
@@ -142,7 +142,7 @@ h3
     #contolBar.hide
     {
         
-        transform: translateX(-17vw);
+        transform: translateX(-100%);
     }
 
     #contolBar .na h2
@@ -154,7 +154,7 @@ h3
     {
 
         margin: 20px;
-        padding: 20px;
+       
         overflow: hidden;
     }
     #contolBar .na li
@@ -201,7 +201,7 @@ h3
         background: url(../imgs/01.jpg);
         background-size: cover;
         color: white;
-        
+        background-repeat: no-repeat;
     }
     #head .menu
     {
@@ -417,7 +417,7 @@ h3
         border-left: 20px solid white;
         border-bottom: 10px solid transparent;
         position: absolute;
-        left: 33.8vw;
+        left: 100%;
         background-color: #ddd;
     }
     #education .box.one::before
@@ -428,7 +428,7 @@ h3
         position: absolute;
         border: 2px solid var(--main-color);
         border-radius: 50%;
-        left: 35.55vw;
+        left: 104.5%;
         background-color: #ddd;
         z-index: 3;
         top:17px;
@@ -446,7 +446,7 @@ h3
         border-right: 20px solid white;
         border-bottom: 10px solid transparent;
         position: absolute;
-        left: -1.25vw;
+        left: -4.5%;
         background-color: #ddd;
     }
     #education .box.two::before
@@ -457,7 +457,7 @@ h3
         position: absolute;
         border: 2px solid var(--main-color);
         border-radius: 50%;
-        left: -2.75vw;
+        left: -8.1%;
         background-color: #ddd;
         z-index: 3;
         top:17px;
@@ -487,10 +487,10 @@ h3
         padding-top: 10px;
         background: #444;
         color: white;
-        width: 325px;
+        width: 23vw;
         border-radius: 5px;
         min-height:200px ;
-        padding-left: 7px;
+        
         transition: transform .5s ease-in-out;
     }
     #services .box.hide
@@ -938,22 +938,26 @@ h3
 /* for mobile*/
 @media only screen 
 and (min-width : 10px) 
-and (max-width : 1099px)
+and (max-width : 992px)
 {
     h2
     {
         font-size: 11vw;
         text-transform: capitalize;
         font-family: apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";;
-    }      
+    }    
+    p
+    {
+        font-size: 4.5vw;
+    }  
     .container
     {
-        width: 90%;
+        width: 95%;
         margin: auto;
     }
     .con
     {
-        width: 95%;
+        width: 100%;
         margin: auto;
     }
     ul
@@ -976,7 +980,7 @@ and (max-width : 1099px)
         right: 0;
         z-index: 4;
         overflow: hidden;
-        width: 200px;
+        width: auto;
         
     }
     .bars li
@@ -1059,12 +1063,14 @@ and (max-width : 1099px)
     {
         font-size: 4vw;
         text-align: center;
+        padding-top: 3vw;
+        padding-bottom: 0;
     }
     #contolBar .na ul
     {
 
         margin: 5vw;
-    padding: 4.6vw;
+        padding: 3vw;
         overflow: hidden;
     }
     #contolBar .na li
@@ -1110,6 +1116,7 @@ and (max-width : 1099px)
         height: 100vh;
         background: url(../imgs/01.jpg);
         background-size: cover;
+        background-repeat: no-repeat;
         color: white;
         
     }
@@ -1130,6 +1137,7 @@ and (max-width : 1099px)
         font-size: 24px;
         font-weight: bold;
         width: 100%;
+        
     }
     #head .name
     {
@@ -1153,7 +1161,7 @@ and (max-width : 1099px)
     }
     #head section h2
     {
-        font-size: 40px;
+        font-size: 10vw;
     }
     #head section p
     {
@@ -1173,14 +1181,14 @@ and (max-width : 1099px)
     }
     #head .typed
     {
-        font-size: 18px;
+        font-size: 4.5vw;
         margin-bottom: 20px;
         text-transform: capitalize;
         display: inline-block;
     }
     #head .gss
     {
-        font-size: 20px;
+        font-size: 4.5vw;
         color: var(--main-color);
         display: inline-block;
     }
@@ -1205,9 +1213,13 @@ and (max-width : 1099px)
     #gaserr
     {
         
-    
-        margin-top: 5px;
+        margin-top: 1vw;
+        margin-bottom: -40%;
+        width: 100%;
+        
+
     }
+    
     /*************************end header********************************/
 
     /*************************start about********************************/
@@ -1429,12 +1441,12 @@ and (max-width : 1099px)
     }
     #services .box
     {
-        padding-top: 10px;
+        padding: 3vw;
         background: #444;
         color: white;
-        width: 325px;
+        width: 100%;
         border-radius: 5px;
-        min-height:200px ;
+        min-height:40vw;
         padding-left: 7px;
         transition: transform .5s ease-in-out;
         margin-bottom: 5vw;
@@ -1463,7 +1475,10 @@ and (max-width : 1099px)
         
         
     }
-
+    #services  .sel:hover .icon
+    {
+        transform: rotateY(180deg);
+    }
     #services .box .text
     {
         
@@ -1565,7 +1580,7 @@ and (max-width : 1099px)
     {
         
         width: 100%;
-        height: 176px;
+        height: 43vw;
         position: relative;
         overflow: hidden;
         margin-bottom: 40px;
@@ -1684,12 +1699,12 @@ and (max-width : 1099px)
     #achivments .ac .box
     {
         
-        padding-top: 10px;
+        padding-top: 3vw;
         background: white;
         color: white;
-        width: 325px;
+        width: 100%;
         border-radius: 5px;
-        min-height:200px ;
+        min-height:40vw;
         padding-left: 7px;
         z-index: 2;
         position: relative;
