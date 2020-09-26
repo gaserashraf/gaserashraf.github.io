@@ -1,0 +1,12 @@
+@import "../config";
+#cv{
+    @include easeOut;
+    button{
+        @include easeOut;
+        border-radius: 30px;
+        font-size: 13px;
+        padding: 17px 25px;
+        width: 200px;
+        text-transform: capitalize;
+    }
+}

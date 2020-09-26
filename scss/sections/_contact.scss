@@ -1,0 +1,73 @@
+@import"../config";
+#contact
+    {
+        @include easeOut;
+        background: url(../imgs/contact.png);
+        background-size: cover;
+        .op{
+            background-color: rgba(255, 255, 255, 0.603);
+        }
+        .cont{
+            width: 50%;
+            margin: auto;
+            text-align: center;
+
+        }
+        input,textArea{
+            background:rgba(0, 0, 0, 0.068);
+            border: 1px solid rgb(179, 179, 179);
+        }
+        .btn{
+            background-color: var(--main-color);
+        }
+
+    }
+
+ 
+    #contact .cont .boxs
+    {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-around;
+        
+        width: 100%;
+    }
+    #contact .cont .box .l
+    {
+        background-color: black;
+        position: absolute;
+        left: 60px;
+        width: 1px;
+        height: 70px;
+    }
+    #contact .cont .boxs .box
+    {
+        width: 30%;
+        overflow: hidden;
+        position: relative;
+        float: left;
+        text-align: left;
+        padding: 20px;
+    }
+    #contact .cont .boxs .box i
+    {
+        float: left;
+        margin-right: 12px;
+        margin-top: 15px;
+        font-size: 35px;
+        color: var(--main-color);
+    }
+    #contact .cont .boxs .box p
+    {
+        margin-top: 0;
+        padding-left: 54px;
+        color: rgb(117, 116, 116);
+        font-size: 12px;
+    }
+    #contact .cont .boxs .box p:first-of-type
+    {
+        font-weight: bold;  
+        font-size: 15px;
+        color: var(--main-color);
+        
+    }

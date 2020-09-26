@@ -1,0 +1,29 @@
+
+@import "sections/header";
+@import "sections/about";
+@import "sections/cv";
+@import "sections/education";
+@import "sections/services";
+@import "sections/skills";
+
+@import "sections/projects";
+@import "sections/achivments";
+@import "sections/contact";
+@import "fonts";
+@import "utilities";
+@import "config";
+@import "imghover";
+
+@import "colors";
+@import "dark";
+footer
+    {
+        background-color: #444;
+        color: white;
+        height: 40px;
+        text-align: center;
+        overflow: hidden;
+
+    }
+
+@import "mobile";

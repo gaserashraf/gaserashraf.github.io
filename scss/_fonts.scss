@@ -1,0 +1,17 @@
+@font-face {
+    font-family: font-p;
+    src: url(../fonts/UbuntuCondensed-Regular.ttf);
+  }
+  @font-face {
+    font-family: font-h;
+    src: url(../fonts/Poppins-SemiBold.ttf);
+  }
+
+  .fontp{
+      font-family: font-p;
+      font-size: 20px;
+  }
+  .fonth{
+    font-family: font-h;
+    font-size: 45px;
+}

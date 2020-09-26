@@ -1,0 +1,30 @@
+@import"../config";
+
+    /*************************start services********************************/
+    #services
+    {
+        min-height: 350px;
+        @include easeOut;
+        .rounded{
+            min-height: 250px;
+            i
+            {
+                font-size: 30px;
+                
+            }
+            .icon{
+                @include easeOut;
+            }   
+
+            
+        }
+        .rounded:hover .icon{
+            transform: rotateY(180deg);
+        }
+        .boxs{
+            flex-wrap: wrap;
+        }
+    }
+ 
+
+    /*********end*****/

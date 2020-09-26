@@ -1,0 +1,239 @@
+$dark-text:rgb(0, 0, 0);
+$light-text:#f4f4f4 ;
+/*$dark-bg-p:#212121;
+$dark-bg-s:#323232;*/
+$dark-bg-p:#151515;
+$dark-bg-s:#222;
+$light-bg-p:#fff;
+$light-bg-s:#F5F5F8;
+
+//make btn
+.dark-light-btn{
+    #dw
+    {
+        position: fixed;
+        top: 15%;
+        left: 5px;
+        width: 40px;
+        height: 40px;
+        background:#E50F17;
+        border-radius: 50%;
+        outline:none;
+        border:none;
+        cursor: pointer;
+        z-index: 2;
+        color:white;
+    }
+    #upBut
+    {
+        position: fixed;
+        bottom: 10px;
+        left: 5px;
+        width: 40px;
+        height: 40px;
+        
+        border-radius: 50%;
+        outline:none;
+        border:none;
+        cursor: pointer;
+    }
+    #upBut.wh
+    {
+        background:white;
+    }
+    #upBut.dr
+    {
+        background:#181818;
+    }
+    #upBut:hover
+    {
+        background:rgb(145, 145, 145);
+    }
+    #upBut i
+    {
+        font-size:20px
+    }
+}
+.dark{
+    background-color: $dark-bg-p;
+    //header    
+    .bars  span.b
+    {
+        background-color:$light-text;
+    }
+    #head{
+        color:$light-text;
+        .op{
+            background-color: rgba(34, 34, 34, 0.795);
+        }
+    }
+    //about
+    #about{
+        background-color: $dark-bg-s;
+        color:$light-text;
+    }
+    #cv{
+        background-color: $dark-bg-p;
+        color: $light-text;
+    }
+    //education
+    #education{
+        background-color: $dark-bg-s;
+        color:$light-text;
+        .box.one::before,.box.two::before
+        {
+            background-color: $dark-bg-s;
+        }
+        .box.two,.box.one
+        {
+            background-color: $dark-bg-p;
+        }
+         .box.two div::before
+        {
+            border-right-color: $dark-bg-p;
+            border-left-color: $dark-bg-p;
+        }
+        .box.one div::before
+        {
+            border-right-color: $dark-bg-p;
+            border-left-color: $dark-bg-p;
+
+        }
+    }
+    //services
+    #services
+    {
+        color:$light-text;
+        .rounded{
+            background: $dark-bg-s;
+            &:hover{
+                box-shadow: 0 0 15px $light-text;
+            }
+        }
+
+    }
+    //skills
+    #skills{
+        background-color: $dark-bg-s;
+        color:$light-text;
+    }
+    //projects
+    #projects{
+        background-color: $dark-bg-s;
+        color:$light-text;
+    }
+    //achivments
+    #achivments::after
+    {
+        background-color:$dark-bg-p
+    }
+    #achivments{
+        .ac .box{
+            background-color: $dark-bg-s;
+            &:hover{
+                
+                box-shadow: 0 0 15px $light-text;
+                
+            }
+            p{
+                color:$light-text;
+            }  
+        }
+    }
+    //contact
+    #contact
+    {
+        color: $light-text;
+        .op{
+            background-color: rgba(34, 34, 34, 0.555);
+        }
+        input,textArea{
+            background:rgba(255, 255, 255, 0.884);
+        }
+        .cont .box .l
+        {
+            background-color: $light-text;
+        }
+        .cont .boxs .box p{
+            color:$light-text;
+        }
+    }
+    footer{
+        background-color: $dark-bg-s;
+    }
+
+}
+.light{
+    //header
+    #head{
+        color:$dark-text;
+        
+        .op{
+            background-color: rgba(235, 232, 232, 0.521);
+        }
+        li a{
+            color:darken($dark-text,10%);
+        }
+        .navbar-brand{
+            color:$dark-text;
+
+        }
+    }
+    #cv{
+        background-color: $light-bg-s;
+        color: $dark-text;
+        button{
+            background-color: $light-bg-p;
+        }
+    }
+    #education
+    {
+        .box.two,.box.one
+        {
+            background-color: $light-bg-s;
+        }
+         .box.two div::before
+        {
+            border-right-color: $light-bg-s;
+            border-left-color: $light-bg-s;
+        }
+        .box.one div::before
+        {
+            border-right-color: $light-bg-s;
+            border-left-color: $light-bg-s;
+
+        }
+    }
+    //services
+    #services
+    {
+        color:$dark-text;
+        background-color: $light-bg-s;
+        .rounded{
+            background: #fff;
+            color: $dark-text;
+            &:hover{
+                box-shadow: 0 0 15px rgb(153, 153, 153);
+            }
+        }
+    }
+    #skills
+    {
+        color:$dark-text;
+        background-color: $light-bg-p;
+    }
+    #achivments::after{
+        background-color: $light-bg-s;
+    }
+    #achivments{
+        
+        .ac .box{
+            background-color: $light-bg-p;
+            &:hover{
+                
+                box-shadow: 0 0 15px $dark-text;
+                
+            }
+        }
+    }
+}

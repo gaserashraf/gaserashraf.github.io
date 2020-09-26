@@ -1,0 +1,18 @@
+@import"../config";
+
+#skills{
+    background-color: #ddd;
+    @include easeOut;
+    h3{
+        font-size: 30px;
+    }
+    i{
+        font-size: 100px;
+        margin-right: 1rem;
+        @include easeOut;
+
+        &:hover{
+            color: var(--main-color);
+        }
+    }
+}

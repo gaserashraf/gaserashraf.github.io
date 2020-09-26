@@ -1,0 +1,99 @@
+{
+    "projects":[
+        {
+            "name":"Glozzom",
+            "img":"../imgs/projects/Glozzom.PNG",
+            "live":"https://github.com/gaserashraf/4-projects-using-bootstrap-4",
+            "code":"https://github.com/gaserashraf/4-projects-using-bootstrap-4",
+            "cat":"web"
+        },
+        {
+            "name":"Lucifer theme",
+            "img":"../imgs/projects/lucifer_theme.PNG",
+            "live":"https://gaserashraf.github.io/lucifer-theme/",
+            "code":"https://github.com/gaserashraf/lucifer-theme",
+            "cat":"web"
+        },
+        {
+            "name":"Modern Portfolio",
+            "img":"../imgs/projects/Modern_Portfolio.PNG",
+            "live":"https://gaserashraf.github.io/modern-portfolio-master/",
+            "code":"https://github.com/gaserashraf/modern-portfolio-master",
+            "cat":"web"
+        },
+        {
+            
+            "name":"First Portfolio",
+            "img":"../imgs/projects/First_Portfolio.PNG",
+            "live":"https://gaserashraf.github.io/gaser-ashraf/",
+            "code":"https://github.com/gaserashraf/gaser-ashraf",
+            "cat":"web"
+        },
+        {
+            
+            "name":"Theme",
+            "img":"../imgs/projects/Theme.PNG",
+            "live":"https://gaserashraf.github.io/Front-end-website/",
+            "code":"https://github.com/gaserashraf/Front-end-website",
+            "cat":"web"
+        },
+        {
+            "name":"Covid Tracker",
+            "img":"../imgs/projects/Covid_Tracker.PNG",
+            "live":"https://gaserashraf.github.io/Corona-Tracker/",
+            "code":"https://github.com/gaserashraf/Corona-Tracker",
+            "cat":"web"
+        },
+        {
+            "name":"Sorting Visualizer",
+            "img":"../imgs/projects/Sorting_Visualizer.PNG",
+            "live":"https://gaserashraf.github.io/Sorting-Visualizer/",
+            "code":"https://github.com/gaserashraf/Sorting-Visualizer",
+            "cat":"web"
+        },
+        {
+            "name":"To do list",
+            "img":"../imgs/projects/To_do_list.png",
+            "live":"https://gaserashraf.github.io/To-do-list/",
+            "code":"https://github.com/gaserashraf/To-do-list",
+            "cat":"web"
+        }
+        ,
+        {
+            "name":"Flappy Bird",
+            "img":"../imgs/projects/Flappy_Bird.PNG",
+            "live":"https://gaserashraf.github.io/Flappy-Bird/",
+            "code":"https://github.com/gaserashraf/Flappy-Bird",
+            "cat":"web"
+        },
+        {
+            "name":"Memory game",
+            "img":"../imgs/projects/Memory_game.PNG",
+            "live":"https://gaserashraf.github.io/Memory-game/",
+            "code":"https://github.com/gaserashraf/Memory-game",
+            "cat":"web"
+        },
+        {
+            "name":"Hangman Game",
+            "img":"../imgs/projects/Hangman_Game.png",
+            "live":"https://gaserashraf.github.io/hangman-game/",
+            "code":"https://github.com/gaserashraf/hangman-game",
+            "cat":"web"
+        },
+        {
+            "name":"Restaurant Management",
+            "img":"../imgs/projects/Restaurant_Management.png",
+            "live":"https://github.com/gaserashraf/RESTAURANT-MANAGEMENT",
+            "code":"https://github.com/gaserashraf/RESTAURANT-MANAGEMENT",
+            "cat":"desktop"
+        },
+        {
+            "name":"Ladder and Snake Game",
+            "img":"../imgs/projects/Ladder_and_Snake_Game.PNG",
+            "live":"https://github.com/gaserashraf/",
+            "code":"https://github.com/gaserashraf/",
+            "cat":"desktop"
+        }
+        
+    ]
+}

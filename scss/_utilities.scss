@@ -1,0 +1,154 @@
+ /*************************start global**********************************/
+:root
+{
+    --main-color: #FF9800;
+}
+span.color
+{
+    color:var(--main-color);
+}
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    @include easeOut;
+    font-family: 'Open Sans', sans-serif;
+}
+p
+{
+    line-height: 1.7;
+}
+h3
+{
+    margin-top: 0;
+}
+a
+{
+    text-decoration:none;
+}
+.clear
+{
+    clear: both;
+}
+/************************end gloabl*********************/
+ /*************************start bars********************************/
+.bars
+{
+    position: fixed;
+    top: 45%;
+    right: 0;
+    z-index: 4;
+    overflow: hidden;
+    
+}
+.bars li
+{
+    display:inline-block block;
+    
+}
+.bars  div
+{
+    float: right;
+    margin-bottom: 5px;
+}
+.bars  div.active span:first-of-type
+{
+    display: inline-block;
+}
+.bars  div.active span:last-of-type
+{
+    width:35px;
+    background:var(--main-color);
+}
+.bars  span:first-of-type ,.g
+{
+    color:var(--main-color);
+    margin-right: 5px;
+    float: left;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-top: 4px;
+}
+.bars{
+    .g
+    {
+        display: none;
+    }
+}
+.bars  span.b
+{
+    width: 25px;
+    height: 4px;
+    display: inline-block;
+    background-color: black;
+    border-radius: 10px;
+    transition: width .3s ease-in-out;
+}
+.bars  span.b
+{
+
+    cursor: pointer;
+}
+.bars  span.b:hover
+{
+    width: 35px;
+    background: var(--main-color);
+}
+.bars  span.b:hover + .g
+{
+    display: inline-block;
+}
+.bars{
+    .nav-link{
+        padding: 0;
+        span:first-child{
+            display: none;
+        }
+        &.active{
+            span:first-child{
+                display: inline;
+            }
+            span.g{
+                display: none;
+            }
+           
+           span.b{
+            width: 35px;
+            background: var(--main-color);
+           }
+
+        }
+    }
+}
+/*************************end bars********************************/
+
+
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: center no-repeat #fff;
+    .icon
+    {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        background: url("../imgs/load.png") center no-repeat;
+        animation: rotation 2s infinite linear;
+        z-index: 99999;
+        
+    }
+    
+}

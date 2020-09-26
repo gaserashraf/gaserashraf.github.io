@@ -1,0 +1,77 @@
+ @import"../config";
+ /*************************start header********************************/
+ #head
+ {
+    @include easeOut;
+     height: 49vw;
+     background: url(../imgs/bg.jpg);
+     background-size: cover;
+     color: white;
+     background-repeat: no-repeat;
+    .op{
+        @include easeOut;
+    }
+     li{
+         font-family:font-p;
+         text-transform: uppercase;
+         font-size: 18px;
+         a{
+             @include easeOut;
+            cursor: pointer;
+            &:hover{
+                color:var(--main-color);
+            }
+         }
+     }
+     
+     .navbar-brand
+     {
+         span{
+            font-size: 20px;
+            
+         }
+         span.color{
+            font-size: 30px;
+         }
+         font-family: font-p;
+         font-size: 30px;
+     }
+    
+     div{
+        height: 80%;
+        section{
+            text-transform: capitalize;
+            width: auto;
+            h2{
+                font-size: 40px;
+            }
+            p{
+                font-size: 20px;
+            }
+            .typed{
+                font-size: 25px;
+                margin-bottom: 20px;
+                text-transform: capitalize;
+            }
+            .gss{
+                font-size: 25px;
+            }
+            button{
+                font-size: 20px;
+                padding: 0px 30px;
+                height: 40px;
+                border: 1px solid var(--main-color);
+                background: var(--main-color);
+                border-radius: 20px;
+                color: white;
+                outline:none;
+                @include easeOut;
+                &:hover{
+                    background: rgba(221, 221, 221, 0);
+                    color: var(--main-color)
+                }
+            }
+        }
+    }
+ }
+ /*************************end header********************************/

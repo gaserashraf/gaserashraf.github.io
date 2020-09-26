@@ -1,0 +1,197 @@
+.colors
+{
+    width: 200px;
+    height: 100px;
+    background-color: #fff;
+    border:2px solid #000;
+    position: fixed;
+    z-index: 5;
+    top:37%;
+    @include easeOut;
+    //
+    &-hide{
+        transform:translateX(-200px);
+    }
+    .icon{
+        border:.5px solid #000;
+        cursor: pointer;
+        width: 25px;
+        height: 25px;
+        background-color: white;
+        position: absolute;
+        left: 100%;
+        top:34%;
+        text-align: center;
+        i{
+            color: black;
+            &.active{
+                animation: rotate 1s linear infinite;
+            }
+        }
+        
+        @keyframes rotate {
+            0%   { transform: rotate(0); }
+            100% {  transform: rotate(360deg); }
+        }
+    }
+    .color{
+        height: 100%;
+        p{
+            padding-top:5px;
+            margin: 0;
+            font-family: font-p;
+            font-size: 20px;
+            margin-bottom: -16px;
+        }
+        ul{
+            height: 100%;
+            padding: 0 30px 20px 30px;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li{
+                width: 25px ;
+                height: 25px;
+                border-radius: 50%;
+                cursor: pointer;
+                opacity: .5;
+                &.active{
+                    opacity: 1;
+                }
+            }
+            $colors:#FF9800,#e24727,#009688,#4CAF50;
+            @for $i from 1 through length($colors){
+                li:nth-child(#{$i}){
+                    background-color: nth($colors,$i);
+                }
+            }
+            
+        }
+    }
+}
+//set themes
+
+$themes:(
+    orange:(color:#FF9800),
+    pink:(color:#e24727),
+    blue:(color:#009688),
+    green:(color:#4CAF50)
+);
+@each $theme,$value in $themes{
+    .#{$theme}{
+        h2.color{
+            color:map-get($value,color);
+
+        }
+        span.color
+        {
+            color:map-get($value,color);
+        }
+        .color{
+            color:map-get($value,color);
+        }
+        .dark-light-btn{
+            #dw{
+                background-color: map-get($value,color);
+            }
+        }
+        //header
+        #head
+        {
+             li a:hover{
+                color:map-get($value,color);
+             }
+             .fonth button{
+                 background-color:map-get($value,color);
+                 border-color: map-get($value,color);
+                 &:hover{
+                     color: map-get($value,color);
+                 }
+
+             }
+        }
+        //about
+        #cv{
+            button:hover{
+                background: map-get($value,color);
+            }
+        }
+        #about{
+            a:hover{
+                background: map-get($value,color);
+            }
+            img{
+                border-color: map-get($value,color);
+            }
+        }
+        //education
+        #education .line::before
+        {
+            background-color: map-get($value,color);
+        }
+        #education .box.one::before, #education .box.two::before
+        {
+            border-color:map-get($value,color);
+        }
+        //skills
+        #skills i:hover{
+            color:map-get($value,color);
+        }
+        #projects{
+            ul li:hover,.mixitup-control-active{
+                background-color: map-get($value,color);
+            }
+        }
+        .hovereffect h2 {
+            color:map-get($value,color);
+        }
+        .hovereffect a:hover{
+            color:map-get($value,color);
+        
+        }
+        //achivments
+        #achivments::before
+        {
+            background-color:map-get($value,color);
+        }
+        #achivments .ac .box i{
+            color:map-get($value,color);
+        }
+        //contact
+        #contact{
+            .btn{
+                background-color:map-get($value,color);
+            }
+            .cont .boxs .box i
+            {
+                color:map-get($value,color);
+            }
+            .cont .boxs .box p:first-of-type
+            {
+                color:map-get($value,color);
+            }
+        }
+        //bars
+        .bars  div.active span:last-of-type
+        {
+            background:map-get($value,color);
+        }
+        .bars  span:first-of-type ,.g
+        {
+            color:map-get($value,color);
+        }
+        .bars  span.b:hover
+        {
+            background-color:map-get($value,color);
+        }
+        .bars .nav-link
+        {
+            &.active{
+                span.b{
+                    background-color:map-get($value,color);
+                }
+            }
+        }
+    }
+}

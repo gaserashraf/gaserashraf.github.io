@@ -1,0 +1,60 @@
+@import"../config";
+/*************************start ach********************************/
+#achivments
+{
+    @include easeOut;
+    min-height: 400px;
+    position: relative;
+    padding: 30px 0;
+}
+#achivments .ac
+{
+    position: relative;
+   
+}
+#achivments::before
+{
+    content: '';
+    background-color:var(--main-color) ;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+}
+#achivments::after
+{
+    content: '';
+    background-color:#444 ;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    z-index: -1;
+}
+#achivments .ac .box i
+{
+    font-size: 40px;
+    color: var(--main-color);
+    position: absolute;
+    left: 47%;
+    top: 20px;
+}
+#achivments .ac .box
+{
+    
+    background: white;
+    font-family: font-p;
+    color: white;
+    border-radius: 5px;
+    min-height:200px ;
+    z-index: 2;
+    position: relative;
+    transition: transform .5s ease-in-out;
+}
+#achivments .ac .box p
+{
+    margin-top: 80px;
+    color: #707070;
+}
+/*************************end ach********************************/

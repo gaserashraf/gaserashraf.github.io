@@ -10,80 +10,115 @@
         <title>Gaser Ashraf</title>
         <style></style>
         <link rel="icon" href="css/imgs/icon.jpg" type="image/icon type">
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link href='https://css.gg/code-slash.css' rel='stylesheet'>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
         <link rel="stylesheet" href="css/normalize.css">
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap">
-        <link rel="stylesheet" href="css/css.css">
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="css/main.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src='js/html5shiv.min.js'></script>
         
     </head>
-    <body>
+    <body class="pink dark" data-spy='scroll' data-target="#s-nav" id='body'>
+        <!--loading-->
+        <div class="se-pre-con">
+            <div class="icon"></div>
+        </div>
         <!-------------------------start bar------------------------------------->
-        <nav class="bars">
-            
+        <div class="dark-light-btn">
+            <button id="dw">
+                <i class="fa fa-sun"></i>
+            </button>
+        </div>
+        <nav class="bars" id="s-nav">
                 <div id="LiAb">
-                    <span class="hide">about</span><span class="b"></span>
+                   <a class="nav-link" href="#about">
+                        <span class="">about</span>
+                        <span class="b"></span>
+                        <span class="g">about</span>
+                    </a>
                 </div>
                 <div class="clear"></div>
                 <div id="LiEd">
-                    <span class="hide">education</span><span class="b"></span>
+                    <a class="nav-link" href="#education">
+                        <span class="">education</span>
+                        <span class="b"></span>
+                        <span class="g">education</span>
+                    </a>
                 </div>
                 <div class="clear"></div>
                 <div id="LiSe"> 
-                    <span class="hide">services</span><span class="b"></span>
+                    <a class="nav-link" href="#services">
+                        <span class="">services</span>
+                        <span class="b"></span>
+                        <span class="g">services</span>
+                    </a>
                 </div>
                 <div class="clear"></div>
                 <div id="LiSk">
-                    <span class="hide">skills</span><span class="b"></span>
+                    <a class="nav-link" href="#skills">
+                        <span class="">skills</span>
+                        <span class="b"></span>
+                        <span class="g">skills</span>
+                    </a>
                 </div>
                 <div class="clear"></div>
                 <div id="LiPro">
-                    <span class="hide">projects</span><span class="b"></span>
+                    <a class="nav-link" href="#projects">
+                        <span class="">projects</span>
+                        <span class="b"></span>
+                        <span class="g">projects</span>
+                    </a>
                 </div>
+                
                 <div class="clear"></div>
                 <div id="LiAc">
-                    <span class="hide">achievements</span><span></span>
+                    <a class="nav-link" href="#achivments">
+                        <span class="">achievements</span>
+                        <span class="b"></span>
+                        <span class="g">achievements</span>
+
+                    </a>
                 </div>
             
         </nav>
         <!-------------------------end bar------------------------------------->
 
         <!-------------------------strat contorlbar------------------------------------->
-        <div id='contolBar' class="hide">
-           
-            <nav class="na p-lg-3">
-                <div class="box">
-                    <h2 class="p-lg-2 ">colors</h2>
-                    <ul>
-                        <li class="change" data-color="#FF9800"></li>
-                        <li class="change" data-color="#E91E63"></li>
-                        <li class="change" data-color="#009688"></li>
-                        <li class="change" data-color="#4CAF50"></li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="icon" id='ICON'>
-                <i class="fa fa-cog"></i>
+        <div class="colors colors-hide">
+            <div class="icon" id='icon'>
+              <i class="fa fa-cog"></i>
+            </div>
+            <div class="color text-center">
+                <p>Style Colors</p>
+              <ul>
+                <li data-theme="orange" class=""></li>
+                <li data-theme="pink" class="active"></li>
+                <li data-theme="blue"></li>
+                <li data-theme="green"></li>
+              </ul>
             </div>
         </div>
         <!-------------------------end contorlbar------------------------------------->
 
         <!-------------------------start header------------------------------------->
         <header id="head">
-            <div class="op">
-                <div class="container">
-                    <div class="con">
-                       
-                            <nav class="navbar navbar-expand-lg navbar-dark p-0 pt-1">
+            <div class="op h-100">
+                <div class="container h-100">
+                    <div class="con h-100">
+                            <nav class="navbar navbar-expand-lg navbar-dark p-0 pt-1" id="main-nav">
                                 <div class="container">
-                                    <a class="navbar-brand" style="text-transform: capitalize; font-weight: 500; font-size: 25px;" href='index.html'>
-                                        gaser <span class="color"> ashraf</span>
+                                    <a class="navbar-brand" style="text-transform: capitalize; font-weight: 500;" href='index.html'>
+                                        <span>&lt;</span> gaser <span class="color"> ashraf <span>/&gt;</span></span>
                                     </a>
                                     <button class="navbar-toggler" data-toggle='collapse' data-target='#gaserr'>
                                         <span class="navbar-toggler-icon"></span>
@@ -91,74 +126,113 @@
                                     <div id="gaserr" class="collapse navbar-collapse">
                                         <ul class="navbar-nav ml-auto">
                                             <li class="nav-item">
-                                                <a id=abLi class="nav-link"><i class="fa fa-user mr-2"></i><span>about</span></a>
+                                                <a href="#about" id=abLi class="nav-link">
+                                                    <!-- <i class="fa fa-user mr-2"></i> -->
+                                                    <span>about</span>
+                                                </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a id=edLi class="nav-link"><i class="fa fa-graduation-cap mr-2"></i><span>education</span></a>
+                                                <a href="#education" id=edLi class="nav-link">
+                                                    <!-- <i class="fa fa-graduation-cap mr-2"></i> -->
+                                                    <span>education</span>
+                                                </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a id=serLi class="nav-link"><i class="fa fa-briefcase mr-2"></i><span>services</span></a>
+                                                <a href="#services" id=serLi class="nav-link">
+                                                    <!-- <i class="fa fa-briefcase mr-2"></i> -->
+                                                    <span>services</span>
+                                                </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a id=skLi class="nav-link"><i class="fa fa-cogs mr-2"></i><span>skills</span></a>
+                                                <a href="#skills" id=skLi class="nav-link">
+                                                    <!-- <i class="fa fa-cogs mr-2"></i> -->
+                                                    <span>skills</span>
+                                                </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a id=proLi class="nav-link"><i class="fa fa-archive mr-2"></i><span>projects</span></a>
+                                                <a href="#projects" id=proLi class="nav-link">
+                                                    <!-- <i class="fa fa-archive mr-2"></i> -->
+                                                    <span>projects</span>
+                                                </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a id=acLi class="nav-link"><i class="fa fa-trophy mr-2"></i><span>Achievements</span></a>
+                                                <a href="#achivments" id=acLi class="nav-link">
+                                                    <!-- <i class="fa fa-trophy mr-2"></i> -->
+                                                    <span>Achievements</span>
+                                                </a>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                             </nav>
-                        
-                        <section>
-                            <h2>I'M Gaser <span class="color">Ashraf</span></h2>
-                            <div><span class="gss">A</span>
-                                <div id="typewriter" class="typed"></div>
-                            </div>
-                            <button id='more'>More Details<i class="fa fa-level-down"></i></button>
-                        </section>
+                        <div class="d-flex align-items-center text">
+                            <section class="fonth">
+                                <h2>I'M Gaser <span class="color">Ashraf</span></h2>
+                                <div class="d-flex py-4 fontp"><span class="gss color">A&nbsp;</span>
+                                    <div id="typewriter" class="typed "></div>
+                                </div>
+                                <button id='more' data-target="about">More Details<i class="fa fa-level-down ml-2"></i></button>
+                            </section>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
+         
         <!-------------------------end header------------------------------------->
         <!-------------------------start about------------------------------------->
-        <div class="clear"></div>
-        <section id='about'>
+        
+        
+        <section id='about' class="py-5">
             <div class="container">
-                <div class="con">
-                    <div class="ab hide" id='abLeft'>
-                        <h2><span class="color">About me</span></h2>
-                        <p>I am a Junior Computer Engineering Student at Faculty of Engineering Cairo University, Interseted in Problem Solveing in competitive programming I have experience working as part of a team and individually.</p>
-                        <div class="icons">
-                            <a href="https://www.facebook.com/Gaserashraf22/" target="_blank"><i title="facebook" class="fa fa-facebook"></i></a>
-                            <a href="https://www.instagram.com/gaser_ashraf20/?fbclid=IwAR3i9x4O47IuM7sR3pzMPsEEQ0orE1lEjjJE2zJmvMyfRaXMpXy4m1UXFt0/" target="_blank"><i title="instagram" class="fa fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/in/gaser-ashraf/" target="_blank"><i title="linkedin" class="fa fa-linkedin"></i></a>
-                            <a href="mailto:Elkinggaser@gmail.com" target="_blank"><i title="G-mail" class="fa fa-envelope-o"></i></a>
-                            <a href="https://github.com/gaserashraf" target="_blank"><i title="github" class="fa fa-github"></i></a>
-                            <a href="https://codeforces.com/profile/gaserashraf" target="_blank"><i title="codeforces" class="fa fa-link"></i></a>
+                <div class="con row">
+                    <div class="col-md-8 text d-flex align-items-center">
+                        <div class="ab hide wow animate__fadeInLeft" data-wow-duration="1s" data-wow-offset="300" data-wow-delay="0" id='abLeft'>
+                            <h2 class="py-3 fonth"><span class="color ">About me</span></h2>
+                            <p class="fontp wow animate__pulse" data-wow-duration="3s" data-wow-offset="250" data-wow-delay="0">I am a Junior Computer Engineering Student at Faculty of Engineering Cairo University, Interseted in Problem Solveing in competitive programming I have experience working as part of a team and individually.</p>
+                            <div class="icons d-flex justify-content-between">
+                                <a href="https://www.facebook.com/Gaserashraf22/" target="_blank"><i title="facebook" class="fa fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/gaser_ashraf20/?fbclid=IwAR3i9x4O47IuM7sR3pzMPsEEQ0orE1lEjjJE2zJmvMyfRaXMpXy4m1UXFt0/" target="_blank"><i title="instagram" class="fa fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/gaser-ashraf/" target="_blank"><i title="linkedin" class="fa fa-linkedin"></i></a>
+                                <a href="mailto:Elkinggaser@gmail.com" target="_blank"><i title="G-mail" class="fa fa-envelope-o"></i></a>
+                                <a href="https://github.com/gaserashraf" target="_blank"><i title="github" class="fa fa-github"></i></a>
+                                <a href="https://codeforces.com/profile/gaserashraf" target="_blank"><i title="codeforces" class="fa fa-link"></i></a>
+                                
+                            </div>
                         </div>
+                        
                     </div>
-                    <div class="img hide" id='abRight'>
-                        <img src="imgs/ab.jpg" title="about" alt="about">
+                    <div class="col-md-4 img py-lg-0 py-2 hide wow animate__fadeInRight" data-wow-duration="1s" data-wow-delay="0" data-wow-offset="300" id='abRight'>
+                        <img class="w-100" src="imgs/me.jpeg" title="about" alt="about">
                     </div>
                 </div>
             </div>
         </section>
         <div class="clear"></div>
+        
         <!-------------------------end about------------------------------------->
+        <!--start cv-->
+        <section id="cv">
+            <div class="container text-center py-5">
+                <div class="py-lg-5 py-0 m-auto wow animate__fadeIn" data-wow-duration="1s" data-wow-delay="0" data-wow-offset="300">
+                    <h2 class="fonth color">Download My CV</h2>
+                    <p class="fontp wow animate__headShake" data-wow-duration="2s" data-wow-delay="0" data-wow-offset="300">
+                        I specialize in designing and creating professional user Interfaces for web based applications that are user friendly, accessible and relevant - yet visually stunning and appealing.
+                    </p>
+                    <button class="btn btn-lg">DOWNLOAD MY CV</button>
+                </div>
+            </div>
+        </section>
+        <!--end cv-->
         <!-------------------------start education------------------------------------->
-        <section id='education'>
-            <div class="container">
+         <section id='education'>
+            <div class="container py-5">
                 <div class="items">
-                    <h2><span class="color">Education</span></h2>
+                    <h2 class="fonth pb-2"><span class="color">Education</span></h2>
                     <div class="line"></div>
                     <div class="box one">
                         <div>
-                            <h3>FACULTY OF ENGINEERING, CAIRO UNIVERSITY</h3>
+                            <h3 class="color">FACULTY OF ENGINEERING, CAIRO UNIVERSITY</h3>
                             <p>(AUGUST 2018 - MAY 2023)</p>  
                             <p>COMPUTER ENGINEERING<br/>1st Year in Computer Engineering Department</p>
                         </div>
@@ -173,69 +247,146 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> 
         <!-------------------------end education------------------------------------->
 
         <!-------------------------start services------------------------------------->
-        <section id='services' class="par">
-            <div class="container">
-                <h2>My <span class="color">Services</span></h2>
-                <div class="boxs">
-                    <div class="box hide sel">
-                        <div class="icon"><i class="fa fa-code"></i></div>
-                        <div class="text">
-                            <h3><span class="color">Web Design</span></h3>
-                            <p>Modern and mobile-ready websites for your business, with UI design.</p>
+         <section id='services' class="par py-5">
+            <div class="container pb-4">
+                <h2 class="fonth pb-3 text-center">My <span class="color">Services</span></h2>
+                <div class="row  boxs">
+                    
+                    <div class="col-lg-6 box hide sel d-flex mb-4">
+                        <div class="px-3 py-4 mr-lg-3 mr-0 w-100 rounded d-flex align-items-center wow animate__zoomIn" data-wow-duration="1s" data-wow-delay="0" data-wow-offset="300">
+                            <div class="row ">
+                                <div class="icon col-1 pr-5"><i class="color fa fa-code"></i></div>
+                                <div class="col">
+                                    <h3><span class="color">Web Design</span></h3>
+                                    <p class="fontp">Modern and mobile-ready websites for your business, with UI design.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="box hide sel">
-                        <div class="icon"><i class="fa fa-terminal"></i></div>
-                        <div class="text">
-                            <h3><span class="color">Desktop Applications</span></h3>
-                            <p>Fast and unique windows applications</p>
+
+                    <div class="col-lg-6 box hide sel d-flex mb-4">
+                        <div class="px-3 py-4 mr-0 w-100 rounded d-flex align-items-center wow animate__zoomIn" data-wow-duration="1s" data-wow-delay="0" data-wow-offset="300">
+                            <div class="row ">
+                                <div class="icon col-1 pr-5"><i class="color fas fa-desktop"></i></div>
+                                <div class="col">
+                                    <h3><span class="color">Responsive Design</span></h3>
+                                    <p class="fontp">Modern and mobile-ready websites for your business, with UI design.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="box hide sel">
-                        <div class="icon"><i class="fa fa-briefcase" style="margin-top: 7px;"></i></div>
-                        <div class="text">
-                            <h3><span class="color">Continuos Support</span></h3>
-                            <p>Continuos support for your application,fixing bugs.</p>
+
+                    <div class="col-lg-6 box hide sel d-flex">
+                        <div class="px-3 py-4 mr-lg-3 w-100 mr-0 rounded d-flex align-items-center wow animate__zoomIn" data-wow-duration="1s" data-wow-delay="0" data-wow-offset="0">
+                            <div class="row ">
+                                <div class="icon col-1 pr-5"><i class="color fa fa-terminal"></i></div>
+                                <div class="col">
+                                    <h3><span class="color">Desktop Applications</span></h3>
+                                    <p class="fontp">Fast and unique windows applications.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                   
+
+                    <div class="col-lg-6 box hide sel d-flex">
+                        <div class="px-3 py-4 rounded w-100 d-flex align-items-center wow animate__zoomIn" data-wow-duration="1s" data-wow-delay="0" data-wow-offset="0">
+                            <div class="row ">
+                                <div class="icon col-1 pr-5"><i class="color fa fa-briefcase"></i></div>
+                                <div class="col">
+                                    <h3><span class="color">Continuos Support</span></h3>
+                                    <p class="fontp">Continuos support for your application,fixing bugs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="col-lg-6 box hide sel d-flex">
+                        <div class="px-3 py-4 mr-lg-3 mr-0 rounded g">
+                            <div class="row ">
+                                <div class="icon col-1 pr-5"><i class="color fa fa-code"></i></div>
+                                <div class="text-light col">
+                                    <h3><span class="color">Web Design</span></h3>
+                                    <p class="fontp">Modern and mobile-ready websites for your business, with UI design.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" col-lg-6 box hide sel d-flex">
+                        <div class="px-3 py-4 mr-lg-3 mr-0 rounded g">
+                            <div class="row">
+                                <div class="icon col-1 pr-5"><i class="color fa fa-terminal"></i></div>
+                                <div class="text-light col">
+                                    <h3><span class="color">Desktop Applications</span></h3>
+                                    <p>Fast and unique windows applications</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 box hide sel d-flex">
+                        <div class="px-3 py-4 mr-lg-3 mr-0 rounded g">
+                            <div class="row">
+                                <div class="icon col-1 pr-5"><i class="color fa fa-briefcase"></i></div>
+                                <div class="text-light col">
+                                    <h3><span class="color">Continuos Support</span></h3>
+                                    <p>Continuos support for your application,fixing bugs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 box hide sel d-flex">
+                        <div class="px-3 py-4 rounded g">
+                            <div class="row">
+                                <div class="icon col-1 pr-5"><i class="color fa fa-briefcase" style="margin-top: 7px;"></i></div>
+                                <div class="text-light col">
+                                    <h3><span class="color">Continuos Support</span></h3>
+                                    <p>Continuos support for your application,fixing bugs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   -->
                 </div>
             </div>
-        </section>
+        </section> 
         <!-------------------------end services------------------------------------->
 
         <!-------------------------start skills------------------------------------->
-        <section id='skills'>
-            <div class="container">
+         <section id='skills'>
+            <div class="container py-5">
                 <div class="con">
-                    <h2><span class="color">skills</span></h2>
+                    <h2 class="fonth"><span class="color">Skills</span></h2>
                     <div class="sec hide">
-                        <h3>PROGRAMMING <span>LANGUAGES</span></h3>
-                        <div class="icons">
+                        <h3 class="fontp">PROGRAMMING <span>LANGUAGES</span></h3>
+                        <div class="icons d-flex flex-wrap">
                             <div><i class="devicon-cplusplus-plain" title="c++"></i></div>
+                            <div><i class="devicon-csharp-plain" title="csharp"></i></div>
                             <div><i class="devicon-python-plain" title="python"></i></div>
                             <div><i class="devicon-html5-plain" title="html5"></i></div>
                             <div><i class="devicon-css3-plain" title="css3"></i></div>
                             <div><i class="devicon-javascript-plain" title="javascript"></i></div>
-                            <i class="devicon-bootstrap-plain" title="bootstarp 4"></i>
+                            <div><i class="devicon-bootstrap-plain" title="bootstarp 4"></i></div>
+                            <div><i class="devicon-sass-original" title="sass"></i></div>
                         </div>
                     </div>
                     <div class="clear"></div>
                     <div class="sec hide">
-                        <h3>VERSION CONTROL</h3>
-                        <div class="icons">
+                        <h3 class="fontp">VERSION CONTROL</h3>
+                        <div class="icons d-flex">
                             <div> <i class="devicon-git-plain" title="git"></i></div>
                             <div><i class="devicon-github-plain" title="github"></i></div>
                         </div>
                     </div>
                     <div class="clear"></div>
                     <div class="sec hide">
-                        <h3>OTHER</h3>
-                        <div class="icons">
+                        <h3 class="fontp">OTHER</h3>
+                        <div class="icons d-flex">
                             <div> <i class="devicon-photoshop-plain" title="photoshop"></i></div>
                         </div>
 
@@ -243,149 +394,65 @@
                 </div>
             </div>
         </section>
-        <div class="clear"></div>
+        <div class="clear"></div> 
         <!-------------------------end skills------------------------------------->
 
         <!-------------------------start projects------------------------------------->
-        <section id='projects'>
-            <div class="container">
-                <h2><span class='color'>Projects</span></h2>
-                <!--<ul>
-                    <li class="filter" data-filter=".all">all</li>
-                    <li class="filter" data-filter=".web">web</li>
-                    <li class="filter" data-filter=".desktop">desktop</li>
-                </ul>-->
-                <div class="clear"></div>
-                <div class="boxs" id='gaa'>
-
-                    <div class="box hide web">
-                       <div class="image">
-                           <img src="imgs/projects/mem.PNG" class="gaser">
-                       </div>
-                       <div class="details">
-                        <a href="https://github.com/gaserashraf/Memory-game" target="_blank">view project</a>
-                       </div>
-                    </div>
-                    
-                    <div class="box hide web">
-                        <div class="image">
-                            <img src="imgs/projects/hang.PNG" class="gaser">
-                        </div>
-                        <div class="details">
-                         <a href="https://github.com/gaserashraf/hangman-game" target="_blank">view project</a>
-                        </div>
-                     </div>
-
-                     <div class="box hide web">
-                        <div class="image">
-                            <img src="imgs/projects/personal.PNG" class="gaser">
-                        </div>
-                        <div class="details">
-                         <a href="https://github.com/gaserashraf/gaser-ashraf" target="_blank">view project</a>
-                        </div>
-                     </div>
-
-                     <div class="box hide web">
-                        <div class="image">
-                            <img src="imgs/projects/template.PNG" class="gaser">
-                        </div>
-                        <div class="details">
-                         <a href="https://github.com/gaserashraf/Front-end-website" target="_blank">view project</a>
-                        </div>
-                     </div>
-                    
-                     <div class="box hide web">
-                        <div class="image">
-                            <img src="imgs/projects/sort.PNG" class="gaser">
-                        </div>
-                        <div class="details">
-                         <a href="https://github.com/gaserashraf/Sorting-Visualizer" target="_blank">view project</a>
-                        </div>
-                     </div>
-
-                     <div class="box hide desktop">
-                        <div class="image">
-                            <img src="imgs/projects/ladder.PNG" class="gaser">
-                        </div>
-                        <div class="details">
-                         <a href="" target="_blank">view project</a>
-                        </div>
-                     </div>
-
-                     <div class="box hide desktop">
-                        <div class="image">
-                            <img src="imgs/projects/res.PNG" class="gaser">
-                        </div>
-                        <div class="details">
-                         <a href="https://github.com/gaserashraf/CMP102_Project_Final" target="_blank">view project</a>
-                        </div>
-                     </div>
-                     
-                     <div class="box hide desktop">
-                        <div class="image">
-                            <img src="imgs/projects/xo.PNG" class="gaser">
-                        </div>
-                        <div class="details">
-                         <a href="https://github.com/gaserashraf/XO-Game" target="_blank">view project</a>
-                        </div>
-                     </div>
-
-                     <div class="box hide web">
-                        <div class="image">
-                            <img src="imgs/projects/calc.PNG" class="gaser">
-                        </div>
-                        <div class="details">
-                         <a href="https://github.com/gaserashraf/Simple-Calculator" target="_blank">view project</a>
-                        </div>
-                     </div>
-                     <div class="box hide web">
-                        <div class="image">
-                            <img src="imgs/projects/todo.PNG" class="gaser">
-                        </div>
-                        <div class="details">
-                         <a href="https://github.com/gaserashraf/To-do-list" target="_blank">view project</a>
-                        </div>
-                     </div>
+         <section id='projects'>
+            <div class="container py-5">
+                <h2 class="fonth pb-3"><span class='color'>Projects</span></h2>
+                <ul>
+                    <li data-filter="all">All</li>
+                    <li  data-filter=".web">web</li>
+                    <li  data-filter=".desktop">desktop</li>
+                </ul>
+                <div class="boxs row gaser" id='boxs'>
                 </div>
             </div>
         </section>
         <!-------------------------end projects------------------------------------->
         <!-------------------------start achivments------------------------------------->
-        <section id='achivments'>
-            <div class="container">
+         <section id='achivments'>
+            <div class="container py-5">
                 <div class="ac">
-                    <h2>Achivments</h2>
-                    <div class="boxs" id='BOXS'>
-                        <div class="box hide">
-                            <p><i class="fa fa-trophy"></i>90<sup>th</sup>Place on Egypt - Google Hash Code 2020</p>
+                    <h2 class="fonth">Achivments</h2>
+                    <div class="boxs row justify-content-between" id='BOXS'>
+                        <div class="col-lg-4 mb-lg-0 mb-2 wow animate__slideInLeft" data-wow-duration="1s" data-wow-delay="0" data-wow-offset="0">
+                            <div class="box px-3 py-4 mr-lg-3 mr-0 rounded text-center">
+                                <p><i class="fa fa-trophy"></i>90<sup>th</sup>Place on Egypt - Google Hash Code 2020</p>
+                            </div>
                         </div>
-                        <div class="box hide">    
-                            <p><i class="fa fa-trophy"></i>Specialist - on CodeForces with Rate: 1418</p>
+                        <div class="col-lg-4 mb-lg-0 mb-2">  
+                            <div class="box px-3 py-4 mr-lg-3 mr-0 rounded text-center wow animate__slideInDown" data-wow-duration="1s" data-wow-delay="0" data-wow-offset="0">
+                                <p><i class="fa fa-trophy"></i>Specialist - on CodeForces with Rate: 1418</p>
+                            </div>
                         </div>
-                        <div class="box hide">    
-                            <p><i class="fa fa-trophy"></i>More than 20 project</p>
+                        <div class="col-lg-4 mb-lg-0 mb-2"> 
+                            <div class="box px-3 py-4 mr-lg-3 mr-0 rounded text-center wow animate__slideInRight" data-wow-duration="1s" data-wow-delay="0" data-wow-offset="0">   
+                                <p><i class="fa fa-trophy"></i>More than 20 project</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> 
         <!-------------------------end achivments------------------------------------->
 
         <!-------------------------start contact------------------------------------->
-        <section id="contact">
-            <div class="op">
-                <div class="cont">
-                    <h2><span class="color">Contact Me</span></h2>
-                    <form>
-                        <div>
-                            <input type="text" placeholder="Your Name">
-                            <input type="text" placeholder="Your Phone">
-                            <input type="text" placeholder="Your Email">
-                            <input type="text" placeholder="Your Subject">
+         <section id="contact">
+            <div class="op py-5">
+                <div class="cont m-auto">
+                    <h2 class="fonth pb-5"><span class="color">Contact Me</span></h2>
+                    <form class="row">
+                        <div class="col-md-6 d-block">
+                            <input class="form-control form-control-lg mb-2" type="text" placeholder="Your Name">
+                            <input class="form-control form-control-lg mb-2" type="text" placeholder="Your Phone">
+                            <input class="form-control form-control-lg mb-2" type="text" placeholder="Your Email">
+                            <input class="form-control form-control-lg mb-lg-0 mb-2" type="text" placeholder="Your Subject">
                         </div>
-                        <div class="tex">
-                            <textarea placeholder="Your Message"></textarea>
-                            <input type="submit" class="but" value="Send">
+                        <div class="col tex">
+                            <textarea class="form-control form-control-lg h-75 mb-1" placeholder="Your Message"></textarea>
+                            <input type="submit" class="btn btn-primary btn-block btn-lg" value="Send">
                         </div>
                     </form>
                     <div class="clear"></div>
@@ -411,26 +478,74 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> 
         <!-------------------------end contact------------------------------------->
         <!-------------------------start footer------------------------------------->
         <footer>
-            <p>CopyRight ©Gaser Ashraf 2020.</p>
+            <p class="py-2">CopyRight ©Gaser Ashraf 2020.</p>
         </footer>
        <!-------------------------end footer------------------------------------->
        
         <script src="js/js.js"></script>
-    
+        <script src="js/projects.js"></script>
+        <script src="mixitup.min.js"></script>
         <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-        <script type='text/javascript'>
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+            <script type='text/javascript'>
              const instance = new Typewriter('#typewriter', {
             strings: [ 'software engineer','front end developer','Student At Faculty Of Engineering'],
             autoStart: true,
             loop: true,
             });
+            
+            // for scroll
+            $('#body').scrollspy({target:'#s-nav'});
+            $("#s-nav a").on('click', function (event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                const hash = this.hash;
+
+                $('html, body').animate({
+                scrollTop: $(hash).offset().top
+                }, 800, function () {
+
+                });
+            }
+            });
+
+            $('#body').scrollspy({target:'#main-nav'});
+            // Smooth Scrolling
+            $("#main-nav a").on('click', function (event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+
+                const hash = this.hash;
+
+                $('html, body').animate({
+                scrollTop: $(hash).offset().top
+                }, 800, function () {
+
+                });
+            }
+            });
+            
+            
           </script>
-          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous"></script>
+          <script>
+            new WOW().init();
+            $(window).load(function() {
+                // Animate loader off screen
+                $(".se-pre-con").fadeOut("slow");
+            });
+          </script>
     </body>
 </html>

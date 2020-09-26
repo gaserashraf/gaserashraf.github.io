@@ -1,0 +1,92 @@
+@include mediaXl {
+  #cv .container div{
+    width: 50%;
+  }
+}
+
+  // Desktops & Laptops
+@include mediaLg {
+    #cv .container div{
+      width: 50%;
+    }
+}
+  
+  // Tablets & Small Laptops
+@include mediaMd {
+  //header
+  #head{
+      height: 100vh;
+      li{
+        font-size: 25px;
+      }
+      .navbar-brand{
+        font-size: 35px;
+        span.color{
+          font-size: 35px;
+        }
+      }
+      div.text{
+        justify-content: center;
+        
+          section{
+            text-align: center;
+            div.d-flex{
+                text-align: center;
+                justify-content: center;
+            }
+          }
+      }
+  }
+  #about{
+      .icons{
+          width: 100%;
+      }
+      .text{
+          order: 2;
+      }
+      .img{
+        order :1;
+      }
+  }
+  //services
+  #services
+  {
+    .rounded{
+        margin-top: 2rem;
+    }
+  }
+  //skills
+  #skills{
+      i{
+        font-size: 60px;
+      }
+      .icons{
+          div{
+            margin-bottom: 1rem;
+          }
+      }
+    }
+    #services{
+      .g{
+        width: 100%;
+      }
+    }
+    #contact
+    {
+      .cont{
+        width: 80%;
+        .boxs{
+          display: block;
+          .box{
+            width: 100%;
+          }
+        }
+      
+      }
+    }
+}
+  
+   // Smartphones
+@include mediaSm {
+
+}
