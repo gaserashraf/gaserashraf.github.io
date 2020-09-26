@@ -53,7 +53,7 @@
         },
         {
             "name":"To do list",
-            "img":"../imgs/projects/To_do_list.png",
+            "img":"../imgs/projects/To_do_list.PNG",
             "live":"https://gaserashraf.github.io/To-do-list/",
             "code":"https://github.com/gaserashraf/To-do-list",
             "cat":"web"
@@ -75,14 +75,14 @@
         },
         {
             "name":"Hangman Game",
-            "img":"../imgs/projects/Hangman_Game.png",
+            "img":"../imgs/projects/Hangman_Game.PNG",
             "live":"https://gaserashraf.github.io/hangman-game/",
             "code":"https://github.com/gaserashraf/hangman-game",
             "cat":"web"
         },
         {
             "name":"Restaurant Management",
-            "img":"../imgs/projects/Restaurant_Management.png",
+            "img":"../imgs/projects/Restaurant_Management.PNG",
             "live":"https://github.com/gaserashraf/RESTAURANT-MANAGEMENT",
             "code":"https://github.com/gaserashraf/RESTAURANT-MANAGEMENT",
             "cat":"desktop"
