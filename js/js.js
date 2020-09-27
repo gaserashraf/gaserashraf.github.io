@@ -25,11 +25,18 @@ window.onload=function(){
             body.classList.remove("light");
             body.classList.remove("dark");
             body.classList.add("dark");
+            btn.firstElementChild.classList.remove("fa-sun");
+            btn.firstElementChild.classList.remove("fa-moon");
+            btn.firstElementChild.classList.add("fa-sun");
         }
         else{
             body.classList.remove("light");
-        body.classList.remove("dark");
-        body.classList.add("light");
+            body.classList.remove("dark");
+            body.classList.add("light");
+            btn.firstElementChild.classList.remove("fa-sun");
+            btn.firstElementChild.classList.remove("fa-moon");
+            btn.firstElementChild.classList.add("fa-moon");
+            
         }
     }
   }
@@ -66,9 +73,8 @@ var btn=document.getElementById("dw");
 btn.onclick=function()
 {
     
-    btn.firstElementChild.classList.toggle("fa-sun");
-    btn.firstElementChild.classList.toggle("fa-moon");
-    if(btn.firstElementChild.classList.contains("fa-sun"))//dark mode
+    
+    if(btn.firstElementChild.classList.contains("fa-moon"))//dark mode
     {
         body.classList.remove("light");
         body.classList.remove("dark");
@@ -81,6 +87,8 @@ btn.onclick=function()
         body.classList.add("light");
         window.localStorage.setItem("theme","light");
     }
+    btn.firstElementChild.classList.toggle("fa-moon");
+    btn.firstElementChild.classList.toggle("fa-sun");
 }
 
 
