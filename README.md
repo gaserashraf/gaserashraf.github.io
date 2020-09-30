@@ -1,5 +1,5 @@
 
-![cover](img/cover.jpg)
+![cover](imgs/cover.jpg)
 
 
 <div align="center">
