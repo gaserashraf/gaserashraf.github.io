@@ -28,6 +28,8 @@ window.onload=function(){
             btn.firstElementChild.classList.remove("fa-sun");
             btn.firstElementChild.classList.remove("fa-moon");
             btn.firstElementChild.classList.add("fa-sun");
+            document.getElementById("main-nav").classList.remove("navbar-light");
+            document.getElementById("main-nav").classList.add("navbar-dark");
         }
         else{
             body.classList.remove("light");
@@ -36,6 +38,9 @@ window.onload=function(){
             btn.firstElementChild.classList.remove("fa-sun");
             btn.firstElementChild.classList.remove("fa-moon");
             btn.firstElementChild.classList.add("fa-moon");
+            
+            document.getElementById("main-nav").classList.add("navbar-light");
+            document.getElementById("main-nav").classList.remove("navbar-dark");
             
         }
     }
@@ -79,12 +84,16 @@ btn.onclick=function()
         body.classList.remove("light");
         body.classList.remove("dark");
         body.classList.add("dark");
+        document.getElementById("main-nav").classList.toggle("navbar-light");
+        document.getElementById("main-nav").classList.toggle("navbar-dark");
         window.localStorage.setItem("theme","dark");
     }
     else{
         body.classList.remove("light");
         body.classList.remove("dark");
         body.classList.add("light");
+        document.getElementById("main-nav").classList.toggle("navbar-light");
+        document.getElementById("main-nav").classList.toggle("navbar-dark");
         window.localStorage.setItem("theme","light");
     }
     btn.firstElementChild.classList.toggle("fa-moon");
@@ -94,7 +103,7 @@ btn.onclick=function()
 
 document.getElementById('icon').onclick=function()
 {
-  document.getElementById('icon').children[0].classList.toggle("active");
-  document.getElementById('icon').parentElement.classList.toggle("colors-hide");
+    document.getElementById('icon').children[0].classList.toggle("active");
+    document.getElementById('icon').parentElement.classList.toggle("colors-hide");
 
 }
